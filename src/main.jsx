@@ -14,10 +14,7 @@ const router = createBrowserRouter([
       children:[{
       path:"",
       element:<Home/>,     
-      children:[{
-        path:"service",
-        element:<Service />
-      }]  
+       
       },
       {
         path:"about", // it will contain object
