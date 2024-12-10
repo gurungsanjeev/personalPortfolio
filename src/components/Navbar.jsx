@@ -5,6 +5,8 @@ import { NavLink } from 'react-router-dom'
 const Navbar = (props) => {
     return (
         <>
+        
+
             <nav className={`flex bg-${props.mod} text-${props.mod==="light"?"dark":"light"}`}>
 
                 <div className="logo "><NavLink  to="" ><h1 className='font-semibold'>Sanjeev</h1> </NavLink></div>
@@ -21,6 +23,7 @@ const Navbar = (props) => {
                 </ul>
             </nav>
             
+        
         </>
     )
 }

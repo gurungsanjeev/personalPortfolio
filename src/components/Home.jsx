@@ -17,17 +17,20 @@ const Home = () => {
 
               </div>
               <div className="button  mt-10">
-                <button className=' bg-purple-500 p-6 rounded-se-3xl text-white font-bold'>See my projects</button>
+                <button className=' bg-purple-500 p-6 rounded-se-3xl text-white font-bold'>My projects</button>
 
               </div>
             </div>
             {/* this is the homepage social media link  */}
-            <div className="social-media-link mt-10">
-              <i className="fa-brands fa-facebook text-blue-500"></i>
+            <div className="social-media-link mt-10 gap-6 mb-8">
+              <i className="fa-brands fa-2x fa-facebook text-blue-500 pr-5"></i>
+              <i class="fa-brands fa-2x fa-linkedin text-blue-500"></i>
             </div>
           </div>
           <div className="home-right">
-            <img src="main image.png" className='max-h-96' alt="" />
+            <img  src="main image.png" className='hero-img max-h-96' alt="" />
+
+       
           </div>
         </div>
 
@@ -35,34 +38,34 @@ const Home = () => {
 
       {/* this is the My service section */}
       <section className="myService  bg-slate-500">
-        <div className="service-container h-4/5">
-          <div className="text">
+        <div className="service-container h-30">
+          <div className="text pt-1">
             <h1 className='justify-center text-center font-semibold text-6xl my-7'>My Service</h1>
 
           </div>
           <div className="cards-List">
             <div className="card-group">
               <div className="card">
-                <img className="card-img-top" src="..." alt="Card image cap" />
+              <i class="fa-solid fa-code fa-3x flex justify-center mt-4"></i>
                 <div className="card-body">
-                  <h5 className="card-title">Card title</h5>
-                  <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <h2 className="card-title flex justify-center text-center font-bold text-xl">Custom Web Application Development</h2>
+                  <p className="card-text text-justify">I specialize in developing custom web applications tailored to your unique business requirements, ensuring innovative solutions and exceptional user experiences.By leveraging the latest technologies, I deliver secure, scalable, and high-performance web applications that meet the demands of modern users.</p>
                   <p className="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                 </div>
               </div>
               <div className="card">
-                <img className="card-img-top" src="..." alt="Card image cap" />
+              <i class="fa-brands fa-connectdevelop fa-3x flex justify-center mt-4"></i>
                 <div className="card-body">
-                  <h5 className="card-title">Card title</h5>
-                  <p className="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                  <h2 className="card-title flex justify-center font-bold text-center text-xl">Frontend Development with React</h2>
+                  <p className="card-text text-justify">I design and implement dynamic, responsive user interfaces using React, ensuring a seamless and engaging user experience across all devices.Utilizing React’s component-based architecture, I create scalable and maintainable frontend solutions that provide optimal performance and flexibility.</p>
                   <p className="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                 </div>
               </div>
               <div className="card">
-                <img className="card-img-top" src="..." alt="Card image cap" />
+              <i class="fa-solid fa-earth-americas fa-3x flex justify-center mt-4" ></i>
                 <div className="card-body">
-                  <h5 className="card-title">Card title</h5>
-                  <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                  <h2 className="card-title flex justify-center font-bold text-center text-xl">Full-Stack Development (MERN Stack)</h2>
+                  <p className="card-text text-justify">As a full-stack developer, I provide comprehensive web development services, utilizing the MERN stack (MongoDB, Express.js, React, Node.js) to build both the frontend and backend of your application.I ensure smooth integration between the client and server sides, creating scalable, secure, and high-performing web applications.</p>
                   <p className="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                 </div>
               </div>
