@@ -9,6 +9,9 @@ justify-content: space-between;
 padding: 20px 50px;
 
 }
+.fa-brands fa-facebook{
+  height: 100px;
+}
 ul{
   display: flex;
   gap: 20px;
@@ -29,4 +32,8 @@ a{
  color: rgb(94, 94, 253);
 }
 
+.card{
+  margin:0px  2.7rem 0px 3rem;
+ 
+}
 
