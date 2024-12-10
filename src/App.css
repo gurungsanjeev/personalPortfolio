@@ -7,6 +7,7 @@ background-color: bisque;
 display: flex;
 justify-content: space-between;
 padding: 20px 50px;
+position: sticky;
 
 }
 .hero-img{
@@ -35,5 +36,13 @@ a{
 .card{
   margin:0px  2.7rem 0px 3rem;
  
+}
+.service-container{
+  height: 800px;
+  
+}
+.skill-section{
+  height: 800px;
+  background-color: antiquewhite;
 }
 
