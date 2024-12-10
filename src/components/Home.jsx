@@ -40,7 +40,7 @@ const Home = () => {
       <section className="myService  bg-slate-500">
         <div className="service-container h-30">
           <div className="text pt-1">
-            <h1 className='justify-center text-center font-semibold text-6xl my-7'>My Service</h1>
+            <h1 className='justify-center text-center font-semibold text-6xl mb-9 py-3 '>My Service</h1>
 
           </div>
           <div className="cards-List">
@@ -84,8 +84,8 @@ const Home = () => {
             <h1 className='text-center p-10 text-3xl font-semibold'>My Skills</h1>
           </div>
           <div className="skill-innerContainer flex gap-12 justify-center align-middle">
-            <div className="image-container">
-              <img src="sanjeevv.jpg" alt="" />
+            <div className="image-container" >
+              <img src="sanjeevv.jpg" alt="" className='h-72' />
             </div>
             <div className="text-container ">
               <h2 className='text-center font-semibold'>Skills</h2>
@@ -132,6 +132,7 @@ const Home = () => {
               </div>
             </div>
           </div>
+          <p className='text-center mt-4'><b><i>The moment you believe you are fully skilled is the moment you stop growing—true mastery is realizing there’s always more to learn.</i></b></p>
 
         </div>
       </section>
