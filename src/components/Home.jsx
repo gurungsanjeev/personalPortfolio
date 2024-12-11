@@ -1,5 +1,6 @@
 import React from 'react'
 import Footer from './Footer'
+import { NavLink } from 'react-router-dom'
 
 const Home = () => {
   return (
@@ -73,7 +74,40 @@ const Home = () => {
           </div>
         </div>
       </section>
+      <section>
+        <div className="container">
+          <div className="about-me-title">
+            <h2 className='font-semibold justify-center flex text-3xl mb-5 mt-4'>About Me</h2>
+          </div>
+          <div className="aboutMe flex justify-center border-2 gap-5 p-10">
+            <div className="img ">
+              <img  src="sanjeevv.jpg" alt="" className='h-72 abt-img' />
+            </div>
+            <div className="text w-6/12">
+              <p className='justify-center text-justify flex'>
+                Hello! it's me Sanjeev Gurung, a passionate and driven MERN Stack Developer with a strong foundation in building dynamic, scalable, and responsive web applications. With expertise in MongoDB, Express.js, React, and Node.js, I specialize in creating full-stack applications that deliver seamless user experiences and high-performance solutions.
+                <br />
 
+                I am continuously expanding my skill set and keeping up-to-date with the latest web technologies to ensure that I deliver the most innovative and efficient solutions to my clients. Whether it’s developing a new project from the ground up or improving an existing one, my goal is always to build user-centric, high-quality applications.
+                <br />
+
+                When I’m not coding, you can find me learning new technologies, collaborating with fellow developers, and solving complex problems. I’m passionate about turning ideas into reality and creating applications that drive impact and help businesses succeed.
+
+                Let’s connect and build something amazing together!
+              </p>
+              <div className="social-media-link mt-10 gap-6 mb-8  ">
+              <h4 className='mb-2'>Connect With me!</h4>
+              <div className="socialM flex">
+
+              <NavLink to="https://www.facebook.com/" target='_blank'><i className="fa-brands fa-2x fa-facebook text-blue-500 pr-5" /></NavLink>
+              <NavLink to="https://www.instagram.com/" target='_blank'><i class="fa-brands fa-2x fa-linkedin text-blue-500" /></NavLink>
+              </div>
+            </div>
+            </div>
+            
+          </div>
+        </div>
+      </section>
 
 
       {/* This is my skills section  */}

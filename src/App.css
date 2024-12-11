@@ -9,6 +9,10 @@ justify-content: space-between;
 padding: 20px 50px;
 position: sticky;
 
+.abt-img{
+  filter: drop-shadow(2px 2px 47px #a855f7);
+}
+
 }
 .hero-img{
   filter: drop-shadow(2px 2px 47px #a855f7)   

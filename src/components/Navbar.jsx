@@ -7,7 +7,7 @@ const Navbar = (props) => {
         <>
         
 
-            <nav className={`flex bg-${props.mod} text-${props.mod==="light"?"dark":"light"}`}>
+            <nav className={`flex  bg-${props.mod} text-${props.mod==="light"?"dark":"light"}`}>
 
                 <div className="logo "><NavLink  to="" ><h1 className='font-semibold'>Sanjeev</h1> </NavLink></div>
                 <ul>
