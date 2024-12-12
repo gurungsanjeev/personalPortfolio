@@ -1,6 +1,7 @@
 import React from 'react'
 import Footer from './Footer'
 import { NavLink } from 'react-router-dom'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const Home = () => {
   return (
@@ -77,7 +78,7 @@ const Home = () => {
       <section>
         <div className="container">
           <div className="about-me-title">
-            <h2 className='font-semibold justify-center flex text-3xl mb-5 mt-4 text-purple-500'>About Me</h2>
+            <h2 className='font-semibold justify-center flex text-3xl mb-4 mt-4 text-purple-500'>About Me</h2>
           </div>
           <div className="aboutMe flex justify-center border-2 border-purple-500 gap-5 p-10">
             <div className="img ">
@@ -100,7 +101,9 @@ const Home = () => {
               <div className="socialM flex">
 
               <NavLink to="https://www.facebook.com/" target='_blank'><i className="fa-brands fa-2x fa-facebook text-blue-500 pr-5" /></NavLink>
-              <NavLink to="https://www.instagram.com/" target='_blank'><i class="fa-brands fa-2x fa-linkedin text-blue-500" /></NavLink>
+              <NavLink to="https://www.instagram.com/" target='_blank'><i class="fa-brands fa-2x fa-linkedin text-blue-500 pr-5" /></NavLink>
+              <NavLink to=""><i class="fa-brands fa-square-github fa-2x fa-bounce"></i></NavLink>
+              
               </div>
             </div>
             </div>
