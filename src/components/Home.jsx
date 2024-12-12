@@ -38,7 +38,7 @@ const Home = () => {
 
       </div>
 
-      {/* this is the My service section */}
+      {/******************************** this is the My service section********************* */}
       <section className="myService  bg-slate-500">
         <div className="service-container h-30">
           <div className="text pt-1">
@@ -75,12 +75,16 @@ const Home = () => {
           </div>
         </div>
       </section>
+
+
+
+      {/******************************** This is aboutMe section ***********************************/}
       <section>
-        <div className="container">
+        <div className="container ">
           <div className="about-me-title">
             <h2 className='font-semibold justify-center flex text-3xl mb-4 mt-4 text-purple-500'>About Me</h2>
           </div>
-          <div className="aboutMe flex justify-center border-2 border-purple-500 gap-5 p-10">
+          <div className="aboutMe pr-5 flex justify-center border-2 border-purple-500 gap-5 p-10">
             <div className="img ">
               <img  src="sanjeevv.jpg" alt="" className='h-72 abt-img' />
             </div>
@@ -113,7 +117,7 @@ const Home = () => {
       </section>
 
 
-      {/* This is my skills section  */}
+      {/**********************  This is my skills section ************************** */}
       <section className='skill-section'>
         <div className="sill-section h-30 ">
           <div className="skill-heading h-50">
