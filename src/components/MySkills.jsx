@@ -3,7 +3,8 @@ import React from 'react'
 const MySkills = () => {
   return (
     <>
-      <section className="skill-section bg-gradient-to-r from-purple-500 to-blue-500 py-16 px-8 sm:px-12 rounded-lg shadow-lg">
+      <section className="skill-section bg-gradient-to-r from-purple-500 to-blue-500 py-16 px-8 sm:px-12 rounded-lg shadow-lg clearfix">
+
         <div className="text-center mb-12">
           <h1 className="text-white font-extrabold text-4xl sm:text-5xl mb-6">My Skills</h1>
           <p className="text-white text-lg">A quick overview of my expertise</p>
