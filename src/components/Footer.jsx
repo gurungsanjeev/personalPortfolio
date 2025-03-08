@@ -12,7 +12,7 @@ const Footer = () => {
           <p>
             Crafting Scalable web solutions with the power of the MERN Stack
           </p>
-          <div className="social-media flex gap-4 bottom-0 mt-4">
+          <div className="social-media flex mt-6 gap-4">
           <NavLink><i class="fa-brands fa-linkedin fa-2xl"></i></NavLink>
           <NavLink><i className="fa-brands fa-github fa-2xl" ></i></NavLink>
           </div>
@@ -31,7 +31,7 @@ const Footer = () => {
         <div className="contact">
           <h2 className="font-semibold text-3xl mb-3"><span className="text-blue-600">C</span>ontacts</h2>
           <p className=" mb-2">Kathmandu, Nepal</p>
-          <span className=" mb-2">
+          <span className="mb-2">
             <NavLink to="mailto:gurungsanjeev05@gmail.com">
               gurungsanjeev05@gmail.com
             </NavLink>
@@ -41,7 +41,7 @@ const Footer = () => {
       </div>
       <hr />
       <div className="copyright-section h-20">
-        <p className="  text-center py-2 bottom-0 justify-center ">
+        <p className="  text-center py-2 bottom-0 justify-center font-medium text-xl ">
           &copy; Copyright under sanjeev || {currentYear} made using{" "}
           <i class="fa-brands fa-react fa-spin"></i>
         </p>

@@ -74,7 +74,7 @@ const LandingPage = () => {
           </div>
         </div>
         <div className="right w-2/4 ">
-          <img src="sanjeevv.jpg" alt="" className="w-10/12 h-auto float-right object-cover " />
+          <img src="sanjeevv.jpg" alt="" className="w-10/12 h-auto float-right object-cover border-transparent rounded-lg " />
         </div>
       </div>
     </>
