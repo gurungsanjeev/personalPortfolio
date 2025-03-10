@@ -9,8 +9,8 @@ const Navbar = (props) => {
 
             <nav className={`flex  bg-${props.mod} text-${props.mod==="light"?"dark":"light"}`}>
 
-                <div className="logo "><NavLink  to="" ><h1 className='font-semibold text-2xl'>Sanj<span className='text-black'>eev</span></h1> </NavLink></div>
-                <ul className='items-center flex gap-5'>
+                <div className="logo "><NavLink to="/" ><h1 className='font-semibold text-2xl'>Sanj<span className='text-blue-700'>eev</span></h1> </NavLink></div>
+                <ul className='items-center flex gap-5' id='nav'>
                     <li><NavLink className={(e) => { return e.isActive ? "active" : "" }} to="">Home</NavLink></li>
                     <li ><NavLink className={(e) => { return e.isActive ? "active" : "" }} to="about">About</NavLink></li>
                     <li ><NavLink className={(e) => { return e.isActive ? "active" : "" }} to="projects">Projects</NavLink></li>

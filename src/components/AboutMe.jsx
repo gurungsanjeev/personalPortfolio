@@ -1,11 +1,10 @@
-import React from 'react'
-import { NavLink } from 'react-router-dom'
-
+import React from "react";
+import { NavLink } from "react-router-dom";
 
 const AboutMe = () => {
   return (
-  <>
-   <section className="about-me bg-white py-12 px-6 sm:px-12" >
+    <>
+      {/* <section className="about-me bg-white py-12 px-6 sm:px-12" >
         <div className="text-center mb-9">
           <h2 className="font-semibold text-3xl sm:text-4xl text-purple-500 mb-6">About Me</h2>
         </div>
@@ -32,9 +31,75 @@ const AboutMe = () => {
           </div>
         </div>
       </section>
-  
-  </>
-  )
-}
+   */}
 
-export default AboutMe
+      <div className="container h-4/5 mt-10">
+        <div className="inner-container">
+          <div className="heading">
+            <h1 className="border-b-8 border-blue-700 text-center text-5xl font-semibold max-w-full">
+              About Me
+            </h1>
+          </div>
+          <div className="head-text mt-4 opacity-70 font-medium">
+            <p className="text-center">
+              Get to know more about me, my background, and what i do.
+            </p>
+          </div>
+          <div className="body mt-5 ">
+            <div className="inner-body flex gap-7">
+              <div className="left-side-body max-w-[45%]">
+                <div className="image">
+                  <img
+                    src="about-me-image2.jpg"
+                    alt="image"
+                    className="object-cover h-35"
+                  />
+                </div>
+              </div>
+              <div className="right-side-body max-w-[55%] ">
+                <div className="body-text mt-10">
+                  <div className="body-heading">
+                    <h2 className="text-3xl font-semibold">
+                      I'm{" "}
+                      <span className="text-blue-700 font-semibold">
+                        Sanjeev
+                      </span>
+                      , a passionate developer and designer
+                    </h2>
+                  </div>
+                  <div className="body-desc mt-6 opacity-65">
+                    with over 2 years of experience in web development, I
+                    specialize in creating responsive and user-friendly
+                    applications. My journey in tech started when I built my
+                    first website at the age of 16, and I've been hooked ever
+                    since. I hold a Bachelor's degree in Computer Science and
+                    have worked with various technologies throughout my career.
+                    My approach combines technical expertise with creative
+                    problem-solving to deliver exceptional digital experiences.
+                  </div>
+
+                  <div className="expertise flex justify-around mt-6">
+                    <div className="col-1">
+                      <ul>
+                        <li>Web Development</li>
+                        <li>Mobile Development</li>
+                      </ul>
+                    </div>
+                    <div className="col-2">
+                      <ul>
+                        <li>UI/UX</li>
+                        <li>Data science</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </>
+  );
+};
+
+export default AboutMe;

@@ -11,21 +11,15 @@ justify-content: space-between;
 padding: 20px 50px;
 position: sticky;
 z-index: 1000;
-
 top: 0;
 }
 
-.hero-img{
-  filter: drop-shadow(2px 2px 47px #a855f7)   
-}
-/* ul{
-  display: flex;
-  gap: 20px;
-} */
-li{
+
+
+ /* #nav> li{
    list-style: none;
   text-decoration: none;
- }
+ } */
 a{
   text-decoration: none;
   /* color: rgb(255, 255, 255); */
@@ -38,16 +32,5 @@ a{
  color: rgb(94, 94, 253);
 }
 
-.card{
-  margin:0px  2.7rem 0px 3rem;
- 
-}
-.service-container{
-  height: 800px;
-  
-}
-.skill-section{
-  height: 800px;
-  background-color: antiquewhite;
-}
+
 
