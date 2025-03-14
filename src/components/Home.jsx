@@ -6,6 +6,7 @@ import AboutMe from "./AboutMe";
 import MySkills from "./MySkills";
 import MyService from "./MyService";
 import LandingPage from "./LandingPage";
+import MyProjects from "./MyProjects";
 import ContactMe from "./ContactMe";
 
 const Home = () => {
@@ -18,6 +19,8 @@ const Home = () => {
 
       {/* About Me Section */}
       <AboutMe />
+
+      <MyProjects/>
 
       {/* Skills Section */}
       <MySkills />

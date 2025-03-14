@@ -48,11 +48,11 @@ const AboutMe = () => {
           <div className="body mt-5 ">
             <div className="inner-body flex gap-7">
               <div className="left-side-body max-w-[45%]">
-                <div className="image">
+                <div className="image  bg-green-400">
                   <img
                     src="about-me-image2.jpg"
                     alt="image"
-                    className="object-cover h-35"
+                    className="object-cover h-35 rounded-3xl bg-red-500"
                   />
                 </div>
               </div>
@@ -78,18 +78,22 @@ const AboutMe = () => {
                     problem-solving to deliver exceptional digital experiences.
                   </div>
 
-                  <div className="expertise flex justify-around mt-6">
-                    <div className="col-1">
-                      <ul>
-                        <li>Web Development</li>
-                        <li>Mobile Development</li>
+                  <div className="expertise flex mt-6">
+                    <div className="col">
+                      <ul className="flex flex-col gap-6">
+                        <i class="fa-solid fa-circle-check text-blue-600">Web Development</i>
+                        <i class="fa-solid fa-circle-check text-blue-600"> Mobile Development</i>
+                        <i class="fa-solid fa-circle-check text-blue-600">UI/UX</i>
+                      
                       </ul>
                     </div>
-                    <div className="col-2">
+                    <div className="flex flex-col ">
                       <ul>
-                        <li>UI/UX</li>
-                        <li>Data science</li>
+                      
+                      
+
                       </ul>
+                      
                     </div>
                   </div>
                 </div>
@@ -98,6 +102,7 @@ const AboutMe = () => {
           </div>
         </div>
       </div>
+      
     </>
   );
 };
