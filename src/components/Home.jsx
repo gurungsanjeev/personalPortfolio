@@ -15,7 +15,7 @@ const Home = () => {
       <LandingPage/>
 
       {/* My Service Section */}
-      <MyService/>
+      {/* <MyService/> */}
 
       {/* About Me Section */}
       <AboutMe />
@@ -23,7 +23,7 @@ const Home = () => {
       <MyProjects/>
 
       {/* Skills Section */}
-      <MySkills />
+      {/* <MySkills /> */}
 
       {/* Contact me */}
       <ContactMe/>

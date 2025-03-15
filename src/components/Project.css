@@ -1,37 +1,73 @@
-*{
+* {
   margin: 0px;
   padding: 0px;
 }
-
-.main-container{
-  margin: 0px 3rem ;
-
-  
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-.project-container{
+.main-container {
+  margin: 0px 3rem;
+
+
+}
+
+.project-container {
   margin: 0px 40px;
+  flex-wrap: wrap;
 }
-.card-img{
-  /* min-width: 380px;
-  max-width: 380px;
-  min-height: 250px;
 
-  max-height: 250px;
-  object-fit: cover; */
-  
-  width: 100%;
-  max-height: 250px;
+.cards {
+  min-width: 28%;
   overflow: hidden;
-  object-fit: cover;
+  border: 1px solid rgb(188, 185, 185);
+  border-radius: 10px;
+margin-bottom: 10px;
+  max-width: 30%;
+  animation: fadeInUp 1s forwards;
+  
 }
-h1{
-  margin: 10px 20px;
+
+
+.card-img>img {
+  max-height: 200px;
+  width: 100%;
+  object-fit: cover;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+
+}
+
+.cards:hover .card-img img {
+  transform: scale(1.1); /* Slight zoom inside */
+}
+
+
+
+/* .card-img{
+  
+  
+  max-width:250px;
+  max-height: 250px;
+  overflow: auto;
+  object-fit: cover;
+} */
+.card-h {
+  margin: 20px;
   opacity: 80%;
   font-weight: 700;
-  font-size:large;
+  font-size: large;
 }
-p{
-  margin:0px 20px 40px 20px;
+
+.card-p {
+  margin: 0px 20px 40px 20px;
   opacity: 70%;
+  font-size: 1.1rem;
 }
