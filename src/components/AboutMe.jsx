@@ -33,7 +33,7 @@ const AboutMe = () => {
       </section>
    */}
 
-      <div className="container h-4/5 mt-10">
+      <div className="container h-4/5 my-40">
         <div className="inner-container">
           <div className="heading">
           <h1 className="border-b-4 border-blue-700 text-center text-5xl font-semibold w-[20%] mx-auto pb-4">

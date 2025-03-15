@@ -6,6 +6,7 @@ const Footer = () => {
   const currentYear = new Date().getFullYear(); // get the current year
   return (
     <>
+    <hr />
       <div className="footer-details col-span-3 flex h-60 justify-around mt-10">
         <div className="details">
         <h2 className="font-semibold text-3xl mb-3"><span className="text-blue-600 ">Sanj</span>eev</h2>

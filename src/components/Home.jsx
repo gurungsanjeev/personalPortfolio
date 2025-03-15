@@ -8,6 +8,7 @@ import MyService from "./MyService";
 import LandingPage from "./LandingPage";
 import MyProjects from "./MyProjects";
 import ContactMe from "./ContactMe";
+import GetInTouch from "./GetInTouch";
 
 const Home = () => {
   return (
@@ -26,7 +27,8 @@ const Home = () => {
       {/* <MySkills /> */}
 
       {/* Contact me */}
-      <ContactMe/>
+      {/* <ContactMe/> */}
+      <GetInTouch/>
     </>
   );
 };
