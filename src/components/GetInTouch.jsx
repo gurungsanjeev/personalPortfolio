@@ -4,7 +4,7 @@ import React from "react";
 const GetInTouch = () => {
   return (
     <>
-      <div className="container my-40">
+      <div className="container my-20">
         <div className="innercontainer">
           <div className="Heading">
             <h1 className="text-center text-3xl w-[30%] mb-7 pb-4 border-blue-700 border-b-4 font-semibold mx-auto">
@@ -84,7 +84,7 @@ const GetInTouch = () => {
 
             {/* Contact Details Section */}
             <div className="right-side w-full md:w-[30%] ">
-              <div className="contact-details w-full   p-3   mb-10 md:mt-0 rounded-md shadow-md">
+              <div className="contact-details w-full   p-3   mb-10  rounded-md shadow-md">
                 <div className="location-details flex ">
                 <div className="max-w-[30%] mr-5">
                     <div className="contact-logo bg-blue-700 w-12 h-12 rounded-full flex items-center justify-center">
@@ -94,6 +94,19 @@ const GetInTouch = () => {
                   <div className="details font-semibold">
                     <label htmlFor="location">Email</label>
                     <p>gurungsanjeev05@gmail.com</p>
+                  </div>
+                </div>
+              </div>
+              <div className="contact-details w-full   p-3   mb-10  rounded-md shadow-md">
+                <div className="location-details flex ">
+                <div className="max-w-[30%] mr-5">
+                    <div className="contact-logo bg-blue-700 w-12 h-12 rounded-full flex items-center justify-center">
+                    <i class="fa-solid fa-phone"></i>
+                    </div>
+                  </div>
+                  <div className="details font-semibold">
+                    <label htmlFor="location">Phone</label>
+                    <p>+977 9812345678</p>
                   </div>
                 </div>
               </div>
