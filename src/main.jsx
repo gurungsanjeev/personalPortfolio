@@ -3,10 +3,10 @@ import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App.jsx'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-import About from './components/About.jsx'
+import AboutMe from './components/AboutMe.jsx'
 import Home from './components/Home.jsx'
-import Projects from './components/Projects.jsx'
-import Service from './components/Service.jsx'
+import MyProjects from './components/MyProjects.jsx'
+
 const router = createBrowserRouter([
   {
     path:"", // it will contain object
@@ -17,13 +17,14 @@ const router = createBrowserRouter([
        
       },
       {
-        path:"about", // it will contain object
-        element:< About />
+        path:"", // it will contain object
+        element:< AboutMe />
       },
       {
-        path:"Projects", // it will contain object
-        element:< Projects />
+        path:"project", // it will contain object
+        element:< MyProjects />
       },
+      
     ]
   },
   

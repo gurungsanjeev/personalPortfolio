@@ -24,7 +24,7 @@ const MyProjects = () => {
         "A user-centric UI/UX design focusing on intuitive navigation, responsive layouts, and seamless user interactions for an engaging experience.",
     },
     {
-      id: 1,
+      id: 3,
       category: "mobile",
       image: "mobile1.jpg",
       title: "Mobile App Development",
@@ -33,7 +33,7 @@ const MyProjects = () => {
     },
 
     {
-      id: 3,
+      id: 4,
       category: "web",
       image: "web1.jpg",
       title: "Web",
@@ -41,7 +41,7 @@ const MyProjects = () => {
         "A user-centric UI/UX design focusing on intuitive navigation, responsive layouts, and seamless user interactions for an engaging experience.",
     },
     {
-      id: 2,
+      id: 5,
       category: "ui/ux",
       image: "uiux.jpg",
       title: "UI/UX Designing",
@@ -49,7 +49,7 @@ const MyProjects = () => {
         "A user-centric UI/UX design focusing on intuitive navigation, responsive layouts, and seamless user interactions for an engaging experience.",
     },
     {
-      id: 3,
+      id: 6,
       category: "web",
       image: "web1.jpg",
       title: "Web",

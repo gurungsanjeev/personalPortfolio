@@ -1,34 +1,46 @@
 import React from "react";
-import Footer from "./Footer";
-import { NavLink } from "react-router-dom";
+import { Suspense } from "react";
+
+
+// / This is the static way to declare
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import AboutMe from "./AboutMe";
-import MySkills from "./MySkills";
-import MyService from "./MyService";
 import LandingPage from "./LandingPage";
 import MyProjects from "./MyProjects";
 import ContactMe from "./ContactMe";
 import GetInTouch from "./GetInTouch";
 
+
 const Home = () => {
   return (
     <>
-      <LandingPage/>
+      
+        {/* Create a single page scrollable website */}
+       <section id="home">
 
-      {/* My Service Section */}
-      {/* <MyService/> */}
+          <LandingPage />
+       </section>
+      
 
-      {/* About Me Section */}
-      <AboutMe />
+        {/* About section */}
+        <section id="about">
 
-      <MyProjects/>
+          <AboutMe />
+        </section>
+       
 
-      {/* Skills Section */}
-      {/* <MySkills /> */}
+        {/* Project section  */}
+        <section id="projects">
+          <MyProjects />
+          </section>
 
-      {/* Contact me */}
-      {/* <ContactMe/> */}
-      <GetInTouch/>
+        {/* getintouch section */}
+        <section id="getintouch">
+
+          <GetInTouch />
+        </section>
+        
+     
     </>
   );
 };
