@@ -9,9 +9,9 @@ const MyProjects = () => {
   const projects = [
     {
       id: 1,
-      category: "mobile",
+      category: "web",
       image: "mobile1.jpg",
-      title: "Mobile App Development",
+      title: "Resume Builder",
       description:
         "A cross-platform mobile app with real-time notifications, seamless UI/UX, and backend integration for smooth performance.",
     },

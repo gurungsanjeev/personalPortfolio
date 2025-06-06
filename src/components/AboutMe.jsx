@@ -33,7 +33,7 @@ const AboutMe = () => {
       </section>
    */}
 
-      <div className="container h-4/5 my-40">
+      <div className="container h-4/5 my-40 pl-14">
         <div className="inner-container">
           <div className="heading">
           <h1 className="border-b-4 border-blue-700 text-center text-5xl font-semibold w-[20%] mx-auto pb-4">
@@ -47,12 +47,12 @@ const AboutMe = () => {
           </div>
           <div className="body mt-5 ">
             <div className="inner-body flex gap-7">
-              <div className="left-side-body max-w-[45%]">
-                <div className="image  bg-green-400">
+              <div className="left-side-body ">
+                <div className="image  ">
                   <img
-                    src="about-me-image2.jpg"
+                    src="about-me-image.jpg"
                     alt="image"
-                    className="object-cover h-35 rounded-3xl bg-red-500"
+                    className="object-cover h-2/5 shadow-md shadow-black w-full rounded-3xl bg-red-500"
                   />
                 </div>
               </div>
@@ -80,10 +80,11 @@ const AboutMe = () => {
 
                   <div className="expertise flex mt-6">
                     <div className="col">
-                      <ul className="flex flex-col gap-6">
-                        <i class="fa-solid fa-circle-check text-blue-600">Web Development</i>
-                        <i class="fa-solid fa-circle-check text-blue-600"> Mobile Development</i>
-                        <i class="fa-solid fa-circle-check text-blue-600">UI/UX</i>
+                      <ul className="flex flex-col gap-8">
+                        <i class="fa-solid fa-circle-check text-blue-600"><strong className="ml-3">FrontEnd Development</strong></i>
+                        <i class="fa-solid fa-circle-check text-blue-600"><strong className="ml-3">BackEnd Development</strong></i>
+                        <i class="fa-solid fa-circle-check text-blue-600"><strong className="ml-3">UI/UX</strong></i>
+                        {/* <i class="fa-solid fa-circle-check text-blue-600"><strong className="ml-3">UI/UX</strong></i> */}
                       
                       </ul>
                     </div>

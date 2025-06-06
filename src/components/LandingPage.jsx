@@ -43,7 +43,7 @@ const LandingPage = () => {
         </div>
       </div> */}
 
-      <div className="contaner flex  pr-14 pl-14">
+      <div className="contaner flex  pr-14 pl-14 flex-wrap">
         <div className="left w-2/4 ">
           <span className="pr-4 pl-4 pt-1 pb-1 bg-slate-300  text-blue-600 font-semibold rounded-3xl text-sm">
             Available for work
@@ -64,11 +64,11 @@ const LandingPage = () => {
                 View My Work <i className="fa-light fa-arrow-right"></i>
               </p>
               <p className="text-lg pr-6 pl-6 pt-2 pb-2 rounded-lg border-2 text-black border-blue-100">
-                <NavLink to="">Contact Me</NavLink>
+                <NavLink to="mailto:gurungsanjeev05@gmail.com">Contact Me</NavLink>
               </p>
             </div>
             <div className="social-media flex gap-4 bottom-0 absolute pb-4">
-            <i className="fa-brands fa-linkedin"></i>
+           <a href="https://www.linkedin.com/in/sanjeev-gurung/" target="_blank"><i className="fa-brands fa-linkedin"></i></a>
             <i className="fa-brands fa-github" ></i>
             </div>
           </div>
