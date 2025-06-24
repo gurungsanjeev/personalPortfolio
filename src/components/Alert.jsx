@@ -2,19 +2,20 @@ import React from 'react'
 
 const Alert = (props) => {
 
-    const capitalize =(word)=>{
+    const capitalize = (word) => {
         const lower = word.toLowerCase();
         return lower.charAt(0).toUpperCase() + lower.slice(1)
 
     }
     return (
-        <div style={{height:'60px'}}>
-          { props.alert &&<div className={`alert alert-${props.alert.type} alert-dismissible fade show`} role="alert">
-                <strong>{capitalize (props.alert.type)}, </strong>{props.alert.msg}
-         
+        <div style={{ height: '60px' }}>
+            {/* // <div className=' h-2 sm:h-10 md:h-12 lg:h-14'> */}
+            {props.alert && <div className={`alert alert-${props.alert.type} alert-dismissible fade show`} role="alert">
+                <strong>{capitalize(props.alert.type)}, </strong>{props.alert.msg}
+
             </div>}
-            </div>
-            
+        </div>
+
     )
 }
 

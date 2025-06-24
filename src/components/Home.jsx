@@ -7,40 +7,48 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import AboutMe from "./AboutMe";
 import LandingPage from "./LandingPage";
 import MyProjects from "./MyProjects";
-import ContactMe from "./ContactMe";
-import GetInTouch from "./GetInTouch";
+// import MySkills from "./MySkills"
+import GetInTouch from "./Footer/GetInTouch";
 
 
 const Home = () => {
   return (
     <>
-      
-        {/* Create a single page scrollable website */}
-       <section id="home">
 
-          <LandingPage />
-       </section>
-      
+      {/* Create a single page scrollable website */}
+      <section id="home">
 
-        {/* About section */}
-        <section id="about">
+        <LandingPage />
+      </section>
 
-          <AboutMe />
-        </section>
-       
 
-        {/* Project section  */}
-        <section id="projects">
-          <MyProjects />
-          </section>
+      {/* About section */}
+      <section id="about">
 
-        {/* getintouch section */}
-        <section id="getintouch">
+        <AboutMe />
+      </section>
 
-          <GetInTouch />
-        </section>
-        
-     
+
+      {/* Project section  */}
+      <section id="projects">
+        <MyProjects />
+      </section>
+
+      {/* Project section  */}
+      {/* <section id="projects">
+        <MySkills />
+      </section> */}
+
+      {/* getintouch section */}
+      <section id="getintouch">
+
+        <GetInTouch />
+      </section>
+
+
+
+
+
     </>
   );
 };

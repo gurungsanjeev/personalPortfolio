@@ -1,42 +1,27 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
+
 const AboutMe = () => {
   return (
     <>
-      {/* <section className="about-me bg-white py-12 px-6 sm:px-12" >
-        <div className="text-center mb-9">
-          <h2 className="font-semibold text-3xl sm:text-4xl text-purple-500 mb-6">About Me</h2>
-        </div>
-        <div className="aboutMe flex flex-col lg:flex-row justify-center gap-6 items-center lg:items-start">
-          <div className="img w-48 h-48 sm:w-64 sm:h-64 rounded-full overflow-hidden">
-            <img src="sanjeevv.jpg" alt="About Me" className="object-cover w-full h-full" />
-          </div>
-          <div className="text w-full sm:w-8/12 text-sm sm:text-base">
-            <p>Hello! It's me, Sanjeev Gurung, a passionate and driven MERN Stack Developer with a strong foundation in building dynamic, scalable, and responsive web applications...</p>
-            <div className="social-media-link mt-6">
-              <h4 className="font-semibold mb-2">Connect With Me!</h4>
-              <div className="flex justify-center gap-6">
-                <NavLink to="https://www.facebook.com/" target="_blank">
-                  <i className="fa-brands fa-2x fa-facebook text-blue-500"></i>
-                </NavLink>
-                <NavLink to="https://www.instagram.com/" target="_blank">
-                  <i className="fa-brands fa-2x fa-linkedin text-blue-500"></i>
-                </NavLink>
-                <NavLink to="#">
-                  <i className="fa-brands fa-square-github fa-2x fa-bounce"></i>
-                </NavLink>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-   */}
 
-      <div className="container h-4/5 my-40 pl-14">
+
+      <div className="container 
+      h-4/5 
+      sm: my-20 md:my-40 
+      sm: pl-6 md:pl-14">
         <div className="inner-container">
           <div className="heading">
-          <h1 className="border-b-4 border-blue-700 text-center text-5xl font-semibold w-[20%] mx-auto pb-4">
+            <h1 className="border-b-4
+             border-blue-700 
+             text-center 
+             text-xl sm:text-3xl md:text-5xl
+             font-semibold 
+            w-[30%] md:w-[40%] 
+             mx-auto 
+             bg-green-400
+            pb-1 sm:pb-2 md:pb-4">
               About Me
             </h1>
           </div>
@@ -47,63 +32,102 @@ const AboutMe = () => {
           </div>
           <div className="body mt-5 ">
             <div className="inner-body flex gap-7">
-              <div className="left-side-body ">
-                <div className="image  ">
+              <div className="left-side-body max-w-[50%]">
+                <div className="image ">
                   <img
                     src="about-me-image.jpg"
                     alt="image"
-                    className="object-cover h-2/5 shadow-md shadow-black w-full rounded-3xl bg-red-500"
+                    className="object-cover
+                     h-full md:h-2/5
+                     shadow-md shadow-black 
+                     w-full 
+                     rounded-3xl "
                   />
                 </div>
               </div>
-              <div className="right-side-body max-w-[55%] ">
-                <div className="body-text mt-10">
+              <div className="right-side-body w-[55%] ">
+                <div className="body-text  sm:mt-1 md:mt-4">
                   <div className="body-heading">
-                    <h2 className="text-3xl font-semibold">
-                      I'm{" "}
+                    <h2 className="
+                    text-sm
+                    sm:text-2xl md:text-3xl 
+                    font-semibold">
+                      I'm {''}
+
                       <span className="text-blue-700 font-semibold">
                         Sanjeev
                       </span>
                       , a passionate developer and designer
                     </h2>
                   </div>
-                  <div className="body-desc mt-6 opacity-65">
-                    with over 2 years of experience in web development, I
-                    specialize in creating responsive and user-friendly
-                    applications. My journey in tech started when I built my
-                    first website at the age of 16, and I've been hooked ever
-                    since. I hold a Bachelor's degree in Computer Science and
-                    have worked with various technologies throughout my career.
-                    My approach combines technical expertise with creative
-                    problem-solving to deliver exceptional digital experiences.
+                  <div className="hidden sm:block">
+
+                    <div className="body-desc
+                      sm:mt-2  md:mt-4 opacity-65
+                      text-xs md:text-sm">
+                      with over 2 years of experience in web development, I
+                      specialize in creating responsive and user-friendly
+                      applications. My journey in tech started when I built my
+                      first website at the age of 16, and I've been hooked ever
+                      since. I hold a Bachelor's degree in Computer Science and
+                      have worked with various technologies throughout my career.
+                      My approach combines technical expertise with creative
+                      problem-solving to deliver exceptional digital experiences.
+                    </div>
                   </div>
 
-                  <div className="expertise flex mt-6">
+                  <div className="expertise flex 
+                  text-[8px] md:text-xl
+                  
+                   mt-4 ">
                     <div className="col">
-                      <ul className="flex flex-col gap-8">
-                        <i class="fa-solid fa-circle-check text-blue-600"><strong className="ml-3">FrontEnd Development</strong></i>
+
+                      <ul className="flex 
+                      gap-2 ">
+                        <span className="font-semibold"> Expertise:</span>
+                        <img src="language/html.svg" alt="" srcset="" className="h-12" />
+                        <img src="language/css.svg" alt="" srcset="" className="h-12" />
+                        <img src="language/react.svg" alt="" srcset="" className="h-12" />
+                        <img src="language/figma.svg" alt="" srcset="" className="h-12" />
+                        {/* <i class="fa-solid fa-circle-check text-blue-600"><strong className="ml-3">FrontEnd Development</strong></i>
                         <i class="fa-solid fa-circle-check text-blue-600"><strong className="ml-3">BackEnd Development</strong></i>
-                        <i class="fa-solid fa-circle-check text-blue-600"><strong className="ml-3">UI/UX</strong></i>
+                        <i class="fa-solid fa-circle-check text-blue-600"><strong className="ml-3">UI/UX</strong></i> */}
                         {/* <i class="fa-solid fa-circle-check text-blue-600"><strong className="ml-3">UI/UX</strong></i> */}
-                      
-                      </ul>
-                    </div>
-                    <div className="flex flex-col ">
-                      <ul>
-                      
-                      
 
                       </ul>
-                      
                     </div>
                   </div>
+
+
                 </div>
               </div>
             </div>
           </div>
+
+
+
+          <div className="block sm:hidden">
+
+            <div className="body-desc
+            
+            mt-4
+            opacity-65
+            text-sm 
+            "
+            >
+              with over 2 years of experience in web development, I
+              specialize in creating responsive and user-friendly
+              applications. My journey in tech started when I built my
+              first website at the age of 16, and I've been hooked ever
+              since. I hold a Bachelor's degree in Computer Science and
+              have worked with various technologies throughout my career.
+              My approach combines technical expertise with creative
+              problem-solving to deliver exceptional digital experiences.
+            </div>
+          </div>
         </div>
       </div>
-      
+
     </>
   );
 };

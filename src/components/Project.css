@@ -2,11 +2,13 @@
   margin: 0px;
   padding: 0px;
 }
+
 @keyframes fadeInUp {
   from {
     opacity: 0;
     transform: translateY(30px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -29,10 +31,10 @@
   overflow: hidden;
   border: 1px solid rgb(188, 185, 185);
   border-radius: 10px;
-margin-bottom: 10px;
+  margin-bottom: 10px;
   max-width: 30%;
   animation: fadeInUp 1s forwards;
-  
+
 }
 
 
@@ -46,19 +48,11 @@ margin-bottom: 10px;
 }
 
 .cards:hover .card-img img {
-  transform: scale(1.1); /* Slight zoom inside */
+  transform: scale(1.1);
+  /* Slight zoom inside */
 }
 
 
-
-/* .card-img{
-  
-  
-  max-width:250px;
-  max-height: 250px;
-  overflow: auto;
-  object-fit: cover;
-} */
 .card-h {
   margin: 20px;
   opacity: 80%;
