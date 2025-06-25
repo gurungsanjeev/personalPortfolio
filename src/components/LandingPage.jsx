@@ -7,7 +7,7 @@ const LandingPage = () => {
       <div
         className="contaner flex  
       pr-3 pl-3
-      md:pr-14 md:pl-14 "
+      md:px-14  "
       >
         <div className="left w-2/4 ">
           <span

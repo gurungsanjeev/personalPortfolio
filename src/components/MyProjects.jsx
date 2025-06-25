@@ -65,60 +65,87 @@ const MyProjects = () => {
 
   return (
     <>
-      <div className="main-container">
-        <div className="container mt-40">
+      <div className="project-list
+      px-0
+      md:px-14  ">
+        <div className="container 
+         mt-5 lg:mt-40">
           <div className="inner-container">
             <div className="title">
-              <h1 className="border-b-4 border-blue-700 text-center text-5xl font-semibold w-[30%] mx-auto pb-4">
+              <h1 className="border-b-4 border-blue-700 
+              text-center 
+              text-2xl sm:text-3xl md:text-4xl lg:text-5xl 
+              font-semibold 
+              w-[50%] lg:w-[30%] 
+              mx-auto 
+              pb-2 sm:pb-2 md:pb-3 lg:pb-4">
                 My Projects
               </h1>
             </div>
-            <div className="title-text">
-              <p className="text-center mt-4 opacity-70">
+            <div className="title-text mt-2 sm:mt-4 lg:mt-5">
+              <p className="text-center 
+              
+              text-xs sm:text-base md:text-xl opacity-70">
                 Explore my recent work and project that showcase my skills and
                 expertise.
               </p>
             </div>
 
-            <div className="project-category mt-10 mb-10">
-              <ul className="flex gap-8 justify-center">
+            <div className="project-category
+              my-4 sm:my-6 md:my-8 lg:my-10 ">
+              <ul className="flex 
+              gap-2 sm:gap-4 md:gap-6 lg:gap-8 justify-center">
                 <button
-                  className={`pr-8 pl-8 pt-2 pb-2 border-blue-600 border-2 rounded-md ${
-                    activeCategory === "all"
+                  className={`
+                    px-6 sm:px-3 md:px-6 lg:px-8 
+                    py-1 sm:py-2 
+                     border-blue-600 
+                     border-2 
+                     text-xs
+                     rounded-md ${activeCategory === "all"
                       ? "bg-blue-600 text-white"
                       : "border-blue-600"
-                  }`}
+                    }`}
                   onClick={() => setActiveCategory("all")}
                 >
                   All
                 </button>
                 <button
-                  className={`pr-8 pl-8 pt-2 pb-2 border-blue-600 border-2 rounded-md ${
-                    activeCategory === "ui/ux"
+                  className={` px-6 sm:px-3 md:px-6 lg:px-8 
+                    py-1 sm:py-2
+                     text-xs
+                     border-blue-600 
+                      border-2 rounded-md ${activeCategory === "ui/ux"
                       ? "bg-blue-600 text-white"
                       : "border-blue-600"
-                  }`}
+                    }`}
                   onClick={() => setActiveCategory("ui/ux")}
                 >
                   UI/UX
                 </button>
 
                 <button
-                  className={`pr-8 pl-8 pt-2 pb-2 border-blue-600 border-2 rounded-md ${
-                    activeCategory === "web"
+                  className={` px-6 sm:px-3 md:px-6 lg:px-8 
+                    py-1 sm:py-2
+                     text-xs
+                     border-blue-600 
+                     border-2  rounded-md ${activeCategory === "web"
                       ? "bg-blue-600 text-white"
                       : "border-blue-600"
-                  }`}
+                    }`}
                   onClick={() => setActiveCategory("web")}
                 >
                   Web
                 </button>
                 <button
-                  className={`pr-8 pl-8 pt-2 pb-2 border-blue-600 border-2 rounded-md ${
-                    activeCategory === "mobile"
+                  className={` px-6 sm:px-3 md:px-6 lg:px-8 
+                    py-1 sm:py-2
+                     text-xs
+                     border-blue-600 
+                     border-2  rounded-md ${activeCategory === "mobile"
                       ? "bg-blue-600 text-white"
                       : "border-blue-600"
-                  }`}
+                    }`}
                   onClick={() => setActiveCategory("mobile")}
                 >
                   Mobile
@@ -127,22 +154,61 @@ const MyProjects = () => {
             </div>
           </div>
         </div>
-        <div className="project-container flex gap-10  justify-around flex-wrap ">
+
+        {/* w-full md:w-[48%] lg:w-[30%] */}
+        {/* ////**********cards design ******************* */}
+        <div className="project-container
+        flex sm:flex-row md:flex-row flex-wrap 
+        lg:justify-center gap-4 sm:gap-6 lg:gap-10 
+        sm:justify-around
+        justify-around
+        bg-green-500
+       
+        
+        "
+        >
           {filteredProjects.map((project) => (
             <div
               key={project.id}
-              className="cards flex flex-col w-full md:w-[45%] lg:w-[30%]"
+              className="cards 
+                flex 
+                
+                min-w[640px]
+                lg:w-full
+                bg-orange-600
+                sm:w-[50%]
+                
+                shadow-lg rounded-none sm:rounded-lg overflow-hidden
+                transition-transform hover:scale-105 duration-300"
             >
-              <div className="card-img">
-                <img src={project.image} alt="" />
+
+
+
+              <div className="card-img 
+              w-full h-56 
+              sm:h-64 lg:h-72 
+              overflow-none">
+                <img
+                  src={project.image}
+                  alt={project.title}
+                  className="w-full h-full object-cover"
+                />
               </div>
-              <h1 className="card-h">{project.title}</h1>
-              <p className="card-p">{project.description}</p>
+              {/* <div className="p-4 sm:p-5 flex flex-col gap-1">
+                <h1 className="card-h text-base font-semibold text-gray-800">
+                  {project.title}
+                </h1>
+                <p className="card-p text-sm text-gray-600">
+                  {project.description}
+                </p>
+              </div> */}
             </div>
           ))}
-          {/* </div> */}
         </div>
-      </div>
+
+
+
+      </div >
     </>
   );
 };

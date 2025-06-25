@@ -10,7 +10,7 @@ const AboutMe = () => {
       <div className="container 
       h-4/5 
       sm: my-20 md:my-40 
-      sm: pl-6 md:pl-14">
+      ">
         <div className="inner-container">
           <div className="heading">
             <h1 className="border-b-4
@@ -20,7 +20,7 @@ const AboutMe = () => {
              font-semibold 
             w-[30%] md:w-[40%] 
              mx-auto 
-             bg-green-400
+             
             pb-1 sm:pb-2 md:pb-4">
               About Me
             </h1>
@@ -47,10 +47,10 @@ const AboutMe = () => {
               </div>
               <div className="right-side-body w-[55%] ">
                 <div className="body-text  sm:mt-1 md:mt-4">
-                  <div className="body-heading">
+                  <div className="body-heading ">
                     <h2 className="
-                    text-sm
-                    sm:text-2xl md:text-3xl 
+                    text-xl
+                    sm:text-2xl md:text-2xl lg:text-5xl 
                     font-semibold">
                       I'm {''}
 
@@ -64,7 +64,7 @@ const AboutMe = () => {
 
                     <div className="body-desc
                       sm:mt-2  md:mt-4 opacity-65
-                      text-xs md:text-sm">
+                      text-xs md:text-xs lg:text-base">
                       with over 2 years of experience in web development, I
                       specialize in creating responsive and user-friendly
                       applications. My journey in tech started when I built my
@@ -76,25 +76,29 @@ const AboutMe = () => {
                     </div>
                   </div>
 
-                  <div className="expertise flex 
-                  text-[8px] md:text-xl
-                  
+                  <div className="expertise block ">
+                    <div className="col text-[8px] md:text-xl
+                  o
                    mt-4 ">
-                    <div className="col">
 
-                      <ul className="flex 
-                      gap-2 ">
-                        <span className="font-semibold"> Expertise:</span>
-                        <img src="language/html.svg" alt="" srcset="" className="h-12" />
-                        <img src="language/css.svg" alt="" srcset="" className="h-12" />
-                        <img src="language/react.svg" alt="" srcset="" className="h-12" />
-                        <img src="language/figma.svg" alt="" srcset="" className="h-12" />
-                        {/* <i class="fa-solid fa-circle-check text-blue-600"><strong className="ml-3">FrontEnd Development</strong></i>
-                        <i class="fa-solid fa-circle-check text-blue-600"><strong className="ml-3">BackEnd Development</strong></i>
-                        <i class="fa-solid fa-circle-check text-blue-600"><strong className="ml-3">UI/UX</strong></i> */}
-                        {/* <i class="fa-solid fa-circle-check text-blue-600"><strong className="ml-3">UI/UX</strong></i> */}
+                      <div className="flex 
+                      gap-2 md:gap-4 flex-wrap
+                      sm:justify-around
+                       ">
 
-                      </ul>
+                        <img src="language/html.svg" alt="" srcset="" className=" filter drop-shadow-custom h-5 sm:h-5 md:h-7 lg:h-12" />
+                        <img src="language/css.svg" alt="" srcset="" className=" filter drop-shadow-custom h-5 sm:h-6 lg:h-12" />
+                        <img src="language/js.svg" alt="" srcset="" className=" filter drop-shadow-custom h-5 sm:h-5 md:h-7 lg:h-12" />
+                        <img src="language/react.svg" alt="" srcset="" className=" filter drop-shadow-custom h-5 sm:h-5 md:h-7 lg:h-12" />
+                        <img src="language/express.svg" alt="" srcset="" className=" filter drop-shadow-custom h-5 sm:h-5 md:h-7 lg:h-12" />
+                        {/* <img src="language/mongo.svg" alt="" srcset="" className="h-4 sm:h-6 lg:h-12" /> */}
+                        <img src="language/node.svg" alt="" srcset="" className=" filter drop-shadow-custom h-5 sm:h-5 md:h-7 lg:h-12" />
+                        <img src="language/tailwind.svg" alt="" srcset="" className=" filter drop-shadow-custom h-5 sm:h-5 md:h-7 lg:h-12" />
+                        <img src="language/typescript.svg" alt="" srcset="" className=" filter drop-shadow-custom h-5 sm:h-5 md:h-7 lg:h-12" />
+                        <img src="language/figma.svg" alt="" srcset="" className=" filter drop-shadow-custom h-5 sm:h-5 md:h-7 lg:h-12" />
+
+
+                      </div>
                     </div>
                   </div>
 
@@ -127,6 +131,7 @@ const AboutMe = () => {
           </div>
         </div>
       </div>
+
 
     </>
   );
